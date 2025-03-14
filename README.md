@@ -1,15 +1,34 @@
-# Homebrew Hub games database
+# Homebrew Hub GB/GBC games database FORK
 
-JSON and Assets database of all the game and homebrew entries on [Homebrew Hub](https://hh.gbdev.io). Propose here additions, improvements and fixes.
+The purpose of this fork to convert the [Homebrew Hub](https://hh.gbdev.io) database to the format of ".unistore".
+In this format the Universal Updater can download the entries. 
 
 ![](https://img.shields.io/badge/dynamic/json.svg?label=database&colorB=green&suffix=%20total%20entries&query=results&uri=https://hh3.gbdev.io/api/all) [![Schema compliance](https://github.com/gbdev/database/actions/workflows/test.yml/badge.svg)](https://github.com/gbdev/database/actions/workflows/test.yml)
 
-## Contribute
 
-We want to include every homebrew, game or demo ever produced for Game Boy or Game Boy Color.
-If you know an interesting entry, please [contribute](CONTRIBUTING.md), everyone can add new games or improve the existing entries, it's really easy!
+# How to use?
 
-There are also a lot of websites and blogs with a lot of ROMs, we are writing script to automatically scrape those resources. [Take a look](scrapers/README.md).
+Steps:
+0. Update the repository on github (to add new items from the main, if there was an update), and pull it localy.
+1. Run on Linux the 1_createlist.sh
+   This creates the list of the directories of game.json files.
+2. Run the gbxunistore.py with the command: 'python3 gbxunistore.py'
+   This creates the .unistore JSON file, and also convert the first image to a PNG icon of every game.
+   (Check the Python script's first line to have "gb" value set.) 
+4. Copy the 'iconversion' directory to a Windows machine and run the '3_convert.cmd' script.
+   This converts the PNG icons and the index list to a sprite sheet good for 3DS.
+5. Copy the result gb.t3x file back to the repository root   
+
+## Address to add in Universal Updater
+This is too long to enter:
+
+https://raw.githubusercontent.com/vargaviktor/database-unistore/master/gb.unistore
+
+Add this instead:
+
+https://shorturl.at/KbfWT
+
+(If this is unavailable, create a short link from the link above and try to add that.)
 
 ## License
 
