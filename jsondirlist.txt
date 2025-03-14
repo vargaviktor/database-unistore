@@ -1154,6 +1154,7 @@ entries/turtlepuzzle/
 entries/tutty-demo-version/
 entries/twin-peaks-meanwhile/
 entries/tyrian-2000/
+entries/tyro-shaman/
 entries/uaflag/
 entries/ucbn/
 entries/ucity/

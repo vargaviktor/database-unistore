@@ -9,7 +9,7 @@
         "sheet": "gb.t3x",
         "bg_index": 0,
         "bg_sheet": 0,
-        "revision": 109,
+        "revision": 112,
         "version": 3
     },
     "storeContent": [
@@ -42287,6 +42287,45 @@
         },
         {
             "info": {
+                "author": "Tristan Repolusk",
+                "category": [
+                    "game"
+                ],
+                "console": [
+                    "GBC"
+                ],
+                "description": "The Sun Festival is about to start! But, alas, people have become sick. You are Naura, the Shaman's apprentice, and you are destined to perform rhythmic rituals on the diseased by healing their spirits with your tambourine. Can you save the Sun Festival? For a detailed ...\nSee release notes...",
+                "icon_index": 1157,
+                "last updated": "20250308",
+                "license": "(not set)",
+                "title": "Tyro Shaman",
+                "version": "(not set)",
+                "releasenotes": "The Sun Festival is about to start! But, alas, people have become sick. You are Naura, the Shaman's apprentice, and you are destined to perform rhythmic rituals on the diseased by healing their spirits with your tambourine. Can you save the Sun Festival? For a detailed description of the game mechanics, please refer to the instruction manual in the GitHub repo.\nTags: Open Source, Adventure",
+                "screenshots": [
+                    {
+                        "description": "1",
+                        "url": "https://raw.githubusercontent.com/vargaviktor/database-unistore/master/entries/tyro-shaman/1.png"
+                    },
+                    {
+                        "description": "2",
+                        "url": "https://raw.githubusercontent.com/vargaviktor/database-unistore/master/entries/tyro-shaman/2.png"
+                    },
+                    {
+                        "description": "3",
+                        "url": "https://raw.githubusercontent.com/vargaviktor/database-unistore/master/entries/tyro-shaman/3.png"
+                    }
+                ]
+            },
+            "Download": [
+                {
+                    "type": "downloadFile",
+                    "file": "https://raw.githubusercontent.com/vargaviktor/database-unistore/master/entries/tyro-shaman/TyroShaman.gbc",
+                    "output": "/roms/gb/tyro-shaman.gbc"
+                }
+            ]
+        },
+        {
+            "info": {
                 "author": "tepples",
                 "category": [
                     "demo"
@@ -42295,7 +42334,7 @@
                     "GB"
                 ],
                 "description": "https://forums.nesdev.org/viewtopic.php?t=23726",
-                "icon_index": 1157,
+                "icon_index": 1158,
                 "last updated": "2022-02-28",
                 "license": "(not set)",
                 "title": "uaflag",
@@ -42326,7 +42365,7 @@
                     "GB"
                 ],
                 "description": "",
-                "icon_index": 1158,
+                "icon_index": 1159,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "UCBN",
@@ -42357,7 +42396,7 @@
                     "GBC"
                 ],
                 "description": "Tags: Open Source, RPG, Adventure",
-                "icon_index": 1159,
+                "icon_index": 1160,
                 "last updated": "2001-01-01",
                 "license": "GPL-3.0-or-later",
                 "title": "uCity",
@@ -42388,7 +42427,7 @@
                     "GBC"
                 ],
                 "description": "",
-                "icon_index": 1160,
+                "icon_index": 1161,
                 "last updated": "1999-11-28",
                 "license": "(not set)",
                 "title": "UGB Player Demo",
@@ -42419,7 +42458,7 @@
                     "GB"
                 ],
                 "description": "",
-                "icon_index": 1161,
+                "icon_index": 1162,
                 "last updated": "2001-04-19",
                 "license": "(not set)",
                 "title": "Ultima III",
@@ -42450,7 +42489,7 @@
                     "(not set)"
                 ],
                 "description": "Tags: gbcompo21, gbcompo21-shortlist\nhttps://benjelter.itch.io/unearthed",
-                "icon_index": 1162,
+                "icon_index": 1163,
                 "last updated": "1633053600",
                 "license": "(not set)",
                 "title": "Unearthed",
@@ -42497,7 +42536,7 @@
                     "GBC"
                 ],
                 "description": "",
-                "icon_index": 1163,
+                "icon_index": 1164,
                 "last updated": "2000-10-29",
                 "license": "(not set)",
                 "title": "The Unholy 2",
@@ -42528,7 +42567,7 @@
                     "GB"
                 ],
                 "description": "Platform GameBoy Homebrew\nTags: Platform, event:gbshowdown23\nhttps://tcsouza.itch.io/unholy-friend",
-                "icon_index": 1164,
+                "icon_index": 1165,
                 "last updated": "2023-05-19T18:30:00",
                 "license": "(not set)",
                 "title": "Unholy Friend",
@@ -42575,7 +42614,7 @@
                     "GB"
                 ],
                 "description": "",
-                "icon_index": 1165,
+                "icon_index": 1166,
                 "last updated": "2006-01-01",
                 "license": "(not set)",
                 "title": "Unofficial Alternative Stork Party 2006 Invitation",
@@ -42614,7 +42653,7 @@
                     "GB"
                 ],
                 "description": "",
-                "icon_index": 1166,
+                "icon_index": 1167,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Unseen",
@@ -42645,7 +42684,7 @@
                     "(not set)"
                 ],
                 "description": "A short and simple Game Boy game\nTags: gbcompo21\nhttps://rafagars.itch.io/unstoppable-knight",
-                "icon_index": 1167,
+                "icon_index": 1168,
                 "last updated": "2001-01-01",
                 "license": "MIT",
                 "title": "Unstoppable Knight",
@@ -42692,7 +42731,7 @@
                     "GB"
                 ],
                 "description": "",
-                "icon_index": 1168,
+                "icon_index": 1169,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Up on the housetop",
@@ -42723,7 +42762,7 @@
                     "GB"
                 ],
                 "description": "Discover the remains of a fallen kingdom and its people. Made in GB Studio, Fall 2020.\nTags: RPG, Puzzle\nhttps://evandahm.itch.io/usurper-ghoul",
-                "icon_index": 1169,
+                "icon_index": 1170,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "USURPER GHOUL",
@@ -42774,7 +42813,7 @@
                     "GBC"
                 ],
                 "description": "",
-                "icon_index": 1170,
+                "icon_index": 1171,
                 "last updated": "2004-01-01",
                 "license": "(not set)",
                 "title": "Utopia",
@@ -42829,7 +42868,7 @@
                     "(not set)"
                 ],
                 "description": "Tags: event:gbcompo23, Platform, Adventure\nhttps://vallian88.itch.io/muncher",
-                "icon_index": 1171,
+                "icon_index": 1172,
                 "last updated": "2023-09-15",
                 "license": "(not set)",
                 "title": "Muncher",
@@ -42872,7 +42911,7 @@
                     "GB"
                 ],
                 "description": "",
-                "icon_index": 1172,
+                "icon_index": 1173,
                 "last updated": "1999-08-12",
                 "license": "(not set)",
                 "title": "VCaldan",
@@ -42903,7 +42942,7 @@
                     "GBC"
                 ],
                 "description": "",
-                "icon_index": 1173,
+                "icon_index": 1174,
                 "last updated": "1999-01-01",
                 "license": "(not set)",
                 "title": "Vectrony",
@@ -42936,7 +42975,7 @@
                 "description": [
                     "https://demozoo.org//productions/360226/"
                 ],
-                "icon_index": 1174,
+                "icon_index": 1175,
                 "last updated": "2024-10-05",
                 "license": "(not set)",
                 "title": "Veitikka ja visionääri",
@@ -42967,7 +43006,7 @@
                     "GB"
                 ],
                 "description": "By Maikel Ortega",
-                "icon_index": 1175,
+                "icon_index": 1176,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Velcroid, Maikel Ortega's",
@@ -43002,7 +43041,7 @@
                     "GB"
                 ],
                 "description": "",
-                "icon_index": 1176,
+                "icon_index": 1177,
                 "last updated": "1998-01-01",
                 "license": "(not set)",
                 "title": "Versatility",
@@ -43049,7 +43088,7 @@
                     "GBC"
                 ],
                 "description": "",
-                "icon_index": 1177,
+                "icon_index": 1178,
                 "last updated": "1999-01-26",
                 "license": "(not set)",
                 "title": "Vertical Mess Demo",
@@ -43080,7 +43119,7 @@
                     "GBC"
                 ],
                 "description": "Tags: event:bung-2nd-coding-compo",
-                "icon_index": 1178,
+                "icon_index": 1179,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Video Poker",
@@ -43111,7 +43150,7 @@
                     "(not set)"
                 ],
                 "description": "Tags: event:gbcompo23, Platform\nhttps://videogamestorytime.itch.io/froggykong",
-                "icon_index": 1179,
+                "icon_index": 1180,
                 "last updated": "2023-09-15",
                 "license": "(not set)",
                 "title": "Froggy Kong",
@@ -43164,7 +43203,7 @@
                 "description": [
                     "https://demozoo.org//productions/19786/"
                 ],
-                "icon_index": 1180,
+                "icon_index": 1181,
                 "last updated": "2001-11",
                 "license": "(not set)",
                 "title": "VIP +5",
@@ -43197,7 +43236,7 @@
                 "description": [
                     "https://demozoo.org//productions/26877/"
                 ],
-                "icon_index": 1181,
+                "icon_index": 1182,
                 "last updated": "2001-08-23",
                 "license": "(not set)",
                 "title": "VIP",
@@ -43228,7 +43267,7 @@
                     "GB"
                 ],
                 "description": "The aim of the game is to move the snake around the screen and pick up the hearts. Each time you pick up a heart the snake slows down. There are two version included here. One for the color Gameboy.\nTags: Action, event:bung-3rd-coding-compo",
-                "icon_index": 1182,
+                "icon_index": 1183,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Viper",
@@ -43259,7 +43298,7 @@
                     "(not set)"
                 ],
                 "description": "Tags: event:gbcompo23\nhttps://vl2m-studio.itch.io/dssd",
-                "icon_index": 1183,
+                "icon_index": 1184,
                 "last updated": "2023-09-15",
                 "license": "(not set)",
                 "title": "Did Somebody Say Demo?",
@@ -43310,7 +43349,7 @@
                     "GBC"
                 ],
                 "description": "",
-                "icon_index": 1184,
+                "icon_index": 1185,
                 "last updated": "1999-01-01",
                 "license": "(not set)",
                 "title": "Voxel",
@@ -43341,7 +43380,7 @@
                     "GB"
                 ],
                 "description": "",
-                "icon_index": 1185,
+                "icon_index": 1186,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Waifu Clicker (Version 1.0.0)",
@@ -43372,7 +43411,7 @@
                     "(not set)"
                 ],
                 "description": "you play a farmer trying to flee the country with his bedridden wife\nTags: RPG, gb-showdown-22\nhttps://scleratile.itch.io/wait-for-me",
-                "icon_index": 1186,
+                "icon_index": 1187,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Wait For Me",
@@ -43415,7 +43454,7 @@
                     "GBC"
                 ],
                 "description": "",
-                "icon_index": 1187,
+                "icon_index": 1188,
                 "last updated": "2004-07-09",
                 "license": "(not set)",
                 "title": "Wall Defence",
@@ -43450,7 +43489,7 @@
                     "GB"
                 ],
                 "description": "",
-                "icon_index": 1188,
+                "icon_index": 1189,
                 "last updated": "2000-02-03",
                 "license": "(not set)",
                 "title": "WanWan",
@@ -43485,7 +43524,7 @@
                     "GB"
                 ],
                 "description": "",
-                "icon_index": 1189,
+                "icon_index": 1190,
                 "last updated": "1997-11-01",
                 "license": "(not set)",
                 "title": "Wario Walking",
@@ -43516,7 +43555,7 @@
                     "GBC"
                 ],
                 "description": "",
-                "icon_index": 1190,
+                "icon_index": 1191,
                 "last updated": "1999-01-22",
                 "license": "(not set)",
                 "title": "WarioCraft",
@@ -43547,7 +43586,7 @@
                     "GBC"
                 ],
                 "description": "",
-                "icon_index": 1191,
+                "icon_index": 1192,
                 "last updated": "2001-12-21",
                 "license": "(not set)",
                 "title": "Watch Demo",
@@ -43578,7 +43617,7 @@
                     "GBC"
                 ],
                 "description": "Tags: Action, event:bung-2nd-coding-compo",
-                "icon_index": 1192,
+                "icon_index": 1193,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Water Basketball",
@@ -43609,7 +43648,7 @@
                     "GB"
                 ],
                 "description": "",
-                "icon_index": 1193,
+                "icon_index": 1194,
                 "last updated": "2009-01-01",
                 "license": "(not set)",
                 "title": "We",
@@ -43640,7 +43679,7 @@
                     "GBC"
                 ],
                 "description": "Whackemon is a recreation of my favourite sub-game in Mystical Ninja on the SNES. The idea of the game is to whack the critters that pop up before they disappear. There are 3 game modes, Timed Attack, Persecution and Whackathon, details are given in the game.",
-                "icon_index": 1194,
+                "icon_index": 1195,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Whackemon",
@@ -43671,7 +43710,7 @@
                     "GB"
                 ],
                 "description": "Game Boy puzzle platformer where you befriend your enemies to save the day!\nTags: Platform, Action, Puzzle, event:gbshowdown23\nhttps://shin.itch.io/what-friends-are-for",
-                "icon_index": 1195,
+                "icon_index": 1196,
                 "last updated": "2023-05-20T05:47:00",
                 "license": "(not set)",
                 "title": "What Friends Are For",
@@ -43706,7 +43745,7 @@
                     "GBC"
                 ],
                 "description": "",
-                "icon_index": 1196,
+                "icon_index": 1197,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Where's my A500 ?! (Denki Blocks)",
@@ -43737,7 +43776,7 @@
                     "GBC"
                 ],
                 "description": "",
-                "icon_index": 1197,
+                "icon_index": 1198,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Where's the Chip-Hop?",
@@ -43788,7 +43827,7 @@
                     "GBC"
                 ],
                 "description": "Made for #bitbitjam3 between June 27 and July 4, 2016.",
-                "icon_index": 1198,
+                "icon_index": 1199,
                 "last updated": "2016-07-04",
                 "license": "(not set)",
                 "title": "Where's My Cake?",
@@ -43819,7 +43858,7 @@
                     "GB"
                 ],
                 "description": "Willy Wonderworm is a game for the Nintendo Gameboy and Gameboy Color systems. It should operate under most emulators and on an actual Gameboy system if copied onto a cartridge. Note that the scrolling text on the title screen may not appear correctly on some emulators ...\nSee release notes...",
-                "icon_index": 1199,
+                "icon_index": 1200,
                 "last updated": "1999-11-13",
                 "license": "(not set)",
                 "title": "Willy Wonderworm",
@@ -43850,7 +43889,7 @@
                     "GB"
                 ],
                 "description": "https://gbdev.gg8.se/forums/viewtopic.php?id=682",
-                "icon_index": 1200,
+                "icon_index": 1201,
                 "last updated": "2020-01-26",
                 "license": "(not set)",
                 "title": "Wing Warriors",
@@ -43881,7 +43920,7 @@
                     "GBC"
                 ],
                 "description": "",
-                "icon_index": 1201,
+                "icon_index": 1202,
                 "last updated": "2001-02-16",
                 "license": "(not set)",
                 "title": "Wings (Demo)",
@@ -43912,7 +43951,7 @@
                     "(not set)"
                 ],
                 "description": "Winkâs smallest adventure yet! â Made with GB Studio\nTags: Platform\nhttps://maxoakland.itch.io/wink-gameboy",
-                "icon_index": 1202,
+                "icon_index": 1203,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Wink GameBoy - Beta 5.8",
@@ -44019,7 +44058,7 @@
                     "GB"
                 ],
                 "description": "",
-                "icon_index": 1203,
+                "icon_index": 1204,
                 "last updated": "1999-11-28",
                 "license": "(not set)",
                 "title": "Winter Taiken (trial)",
@@ -44054,7 +44093,7 @@
                     "GBC"
                 ],
                 "description": "",
-                "icon_index": 1204,
+                "icon_index": 1205,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Wired",
@@ -44097,7 +44136,7 @@
                     "GB"
                 ],
                 "description": "https://github.com/sttng/gb-stuff/tree/main/wobble",
-                "icon_index": 1205,
+                "icon_index": 1206,
                 "last updated": "2021-04-19",
                 "license": "(not set)",
                 "title": "Wobble",
@@ -44128,7 +44167,7 @@
                     "GB"
                 ],
                 "description": "",
-                "icon_index": 1206,
+                "icon_index": 1207,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Wobbly Celebration",
@@ -44159,7 +44198,7 @@
                     "GBC"
                 ],
                 "description": "",
-                "icon_index": 1207,
+                "icon_index": 1208,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Wonder Topia",
@@ -44190,7 +44229,7 @@
                     "(not set)"
                 ],
                 "description": "A game for the gameboy or (and most likely) a gameboy emulator.\nTags: Adventure, gbcompo21\nhttps://mastmark-dev.itch.io/work-in-progress",
-                "icon_index": 1208,
+                "icon_index": 1209,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Work In Progress",
@@ -44237,7 +44276,7 @@
                     "(not set)"
                 ],
                 "description": "Cactus tied to a balloon action. Pop or be popped!\nTags: Action, gbcompo21\nhttps://neighto.itch.io/wrecking-balloon",
-                "icon_index": 1209,
+                "icon_index": 1210,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Wrecking Balloon",
@@ -44280,7 +44319,7 @@
                     "(not set)"
                 ],
                 "description": "Tags: event:gbcompo23, Adventure\nhttps://wrong-way-games.itch.io/sacred-meat",
-                "icon_index": 1210,
+                "icon_index": 1211,
                 "last updated": "2023-09-15",
                 "license": "(not set)",
                 "title": "Sacred Meat",
@@ -44325,7 +44364,7 @@
                 "description": [
                     "https://demozoo.org//productions/159488/"
                 ],
-                "icon_index": 1211,
+                "icon_index": 1212,
                 "last updated": "2001-08-13",
                 "license": "(not set)",
                 "title": "WWF Betrayal +5 / Are You Real?!",
@@ -44356,7 +44395,7 @@
                     "(not set)"
                 ],
                 "description": "A fast-paced tunnel shooter for Game Boy\nTags: Shooter, gb-showdown-22\nhttps://quinnp.itch.io/wyrmhole",
-                "icon_index": 1212,
+                "icon_index": 1213,
                 "last updated": "2022-06-12T10:00:00",
                 "license": "MIT",
                 "title": "WYRMHOLE",
@@ -44395,7 +44434,7 @@
                     "GBC"
                 ],
                 "description": "Tags: event:liksang2000-compo",
-                "icon_index": 1213,
+                "icon_index": 1214,
                 "last updated": "2000-04-01",
                 "license": "(not set)",
                 "title": "Xagor's Demo",
@@ -44426,7 +44465,7 @@
                     "(not set)"
                 ],
                 "description": "Tags: event:gbcompo23, Platform\nhttps://xeif.itch.io/feed-the-monster",
-                "icon_index": 1214,
+                "icon_index": 1215,
                 "last updated": "2023-09-15",
                 "license": "(not set)",
                 "title": "FEED THE MONSTER DEMO (Game Boy Color)",
@@ -44477,7 +44516,7 @@
                     "GBC"
                 ],
                 "description": "",
-                "icon_index": 1215,
+                "icon_index": 1216,
                 "last updated": "2008-10-07",
                 "license": "(not set)",
                 "title": "Xevious Millennium",
@@ -44512,7 +44551,7 @@
                     "GB"
                 ],
                 "description": "",
-                "icon_index": 1216,
+                "icon_index": 1217,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Xmas 2016",
@@ -44543,7 +44582,7 @@
                     "(not set)"
                 ],
                 "description": "Tags: event:gbcompo23, Survival, Strategy\nhttps://yamikurae.itch.io/babau",
-                "icon_index": 1217,
+                "icon_index": 1218,
                 "last updated": "2023-09-15",
                 "license": "(not set)",
                 "title": "Babau",
@@ -44598,7 +44637,7 @@
                     "GB"
                 ],
                 "description": "",
-                "icon_index": 1218,
+                "icon_index": 1219,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Yarn Ball",
@@ -44629,7 +44668,7 @@
                     "GB"
                 ],
                 "description": "Shooter game, does NOT work on real hardware, nor in most emulators.",
-                "icon_index": 1219,
+                "icon_index": 1220,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Yars Revenge v1.0",
@@ -44660,7 +44699,7 @@
                     "GB"
                 ],
                 "description": "",
-                "icon_index": 1220,
+                "icon_index": 1221,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Yo-grl Makes a Demo",
@@ -44691,7 +44730,7 @@
                     "(not set)"
                 ],
                 "description": "Recapture the Cornerstone, Stop the Crenalator, Save the Architecture\nTags: Platform, gbcompo21\nhttps://jdcarling.itch.io/yochi-miel-the-crenalator-trials",
-                "icon_index": 1221,
+                "icon_index": 1222,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Yochi & Miel: The Crenalator Trials",
@@ -44750,7 +44789,7 @@
                     "GB"
                 ],
                 "description": "The exciting story of Sir ant.\nTags: Puzzle, event:gbshowdown23\nhttps://projectsrya.itch.io/you-are-my-new-friend",
-                "icon_index": 1222,
+                "icon_index": 1223,
                 "last updated": "2023-05-20T20:45:00",
                 "license": "(not set)",
                 "title": "You are my New friend",
@@ -44809,7 +44848,7 @@
                     "GB"
                 ],
                 "description": "",
-                "icon_index": 1223,
+                "icon_index": 1224,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "You Will Die",
@@ -44840,7 +44879,7 @@
                     "GB"
                 ],
                 "description": "",
-                "icon_index": 1224,
+                "icon_index": 1225,
                 "last updated": "2011",
                 "license": "(not set)",
                 "title": "Yume no Oto 1",
@@ -44875,7 +44914,7 @@
                     "(not set)"
                 ],
                 "description": "Tags: event:gbcompo23, Action, RPG\nhttps://zakari-games.itch.io/frontiers-of-the-fallen",
-                "icon_index": 1225,
+                "icon_index": 1226,
                 "last updated": "2023-09-15",
                 "license": "(not set)",
                 "title": "Frontiers of the Fallen",
@@ -44950,7 +44989,7 @@
                     "GB"
                 ],
                 "description": "http://www.angelfire.com/pokemon/gamelover/gbdk.html",
-                "icon_index": 1226,
+                "icon_index": 1227,
                 "last updated": "2001-05-13",
                 "license": "(not set)",
                 "title": "Zanax GB",
@@ -44985,7 +45024,7 @@
                     "(not set)"
                 ],
                 "description": "Tags: event:gbcompo23, Adventure\nhttps://zanipixels.itch.io/lightseeker",
-                "icon_index": 1227,
+                "icon_index": 1228,
                 "last updated": "2023-09-15",
                 "license": "(not set)",
                 "title": "Lightseeker",
@@ -45032,7 +45071,7 @@
                     "(not set)"
                 ],
                 "description": "Tags: gbcompo21, gbcompo21-shortlist\nhttps://kabcorp.itch.io/zilogized",
-                "icon_index": 1228,
+                "icon_index": 1229,
                 "last updated": "1633053600",
                 "license": "(not set)",
                 "title": "Zilogized",
@@ -45063,7 +45102,7 @@
                     "GB"
                 ],
                 "description": "",
-                "icon_index": 1229,
+                "icon_index": 1230,
                 "last updated": "1997-09-20",
                 "license": "(not set)",
                 "title": "Zoomar",
@@ -45094,7 +45133,7 @@
                     "(not set)"
                 ],
                 "description": "a Gameboy Homebrew Side Shooter\nTags: Shooter, gbcompo21\nhttps://pixelphobicgames.itch.io/zypher",
-                "icon_index": 1230,
+                "icon_index": 1231,
                 "last updated": "2001-01-01",
                 "license": "(not set)",
                 "title": "Zypher",
