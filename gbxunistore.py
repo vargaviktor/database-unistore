@@ -1,3 +1,5 @@
+build = "gb" # or set it to "gba"
+
 #for managing jsons
 import json
 
@@ -29,22 +31,35 @@ file.close()
 
 #setting default paths and other constanst
 nl = "\n"
-storebaseurl = "https://raw.githubusercontent.com/vargaviktor/database-unistore/master/"
-baseurl = "https://raw.githubusercontent.com/vargaviktor/database-unistore/master/entries/"
-rombase = "/roms/gb/"
+if build == "gb":
+   storebaseurl = "https://raw.githubusercontent.com/vargaviktor/database-unistore/master/"
+   baseurl = "https://raw.githubusercontent.com/vargaviktor/database-unistore/master/entries/"
+   rombase = "/roms/gb/"
+   t3sfile = "gb.t3s"
+   t3xfile = "gb.t3x"
+   storefajl = "gb.unistore"    
+else:
+   storebaseurl = "https://raw.githubusercontent.com/vargaviktor/games-unistore/master/"
+   baseurl = "https://raw.githubusercontent.com/vargaviktor/games-unistore/master/entries/"
+   rombase = "/roms/gba/"
+   t3sfile = "gba.t3s"
+   t3xfile = "gba.t3x"
+   storefajl = "gba.unistore"    
+
 defaultdate = "2001-01-01"
 gbt3sfirstline = "--atlas -f rgba -z auto"
 icon_index = 1
 noicon = "000.png"
 allgamejson = [] 
 
-#store the first line of gb.t3s
+#store the first line of gbx.t3s
 #and the second line with for icon zero as "no icon" icon
-gbt3s = open("./iconversion/gb.t3s", "w")
+gbt3s = open("./iconversion/" + t3sfile , "w")
 gbt3s.write(gbt3sfirstline + nl)
 gbt3s.write(noicon+nl)
 
-storeinfo = {
+if build == "gb":
+   storeinfo = {
         "title": "Homebrew Hub GB(C) DB" ,
         "author": "https://hh.gbdev.io (+ vargaviktor)",
 	#                #######################################################
@@ -55,20 +70,42 @@ storeinfo = {
 			"published on the site: https://hh.gbdev.io " + nl + nl +
 			"Converter made by vargaviktor" + nl +
 			"Created on " + str(date.today()) ,
-        "url": storebaseurl + "gb.unistore",
-        "file": "gb.unistore",
-        "sheetURL": storebaseurl + "gb.t3x",
-        "sheet": "gb.t3x",
+        "url": storebaseurl + storefajl,
+        "file": storefajl,
+        "sheetURL": storebaseurl + t3xfile,
+        "sheet": t3xfile ,
         "bg_index": 0,
         "bg_sheet": 0,
         "revision": revision,
         "version": 3
 	    }
-#from this needs to be in a cycle for all gamejsons. 
+else:
+   storeinfo = {
+        "title": "Homebrew Hub GBA DB" ,
+        "author": "https://gbadev.org/ (+ vargaviktor)",
+        #                #######################################################
+        "description":  "Homebrew Hub is a community-led initiative to collect," + nl +
+                        "archive and preserve homebrew and demoscene software" + nl +
+                        "developed for Game Boy (Color), Game Boy Advance and" + nl +
+                        "NES. In this database you can browse GBA homebrews" + nl +
+                        "published on the site: https://gbadev.org/" + nl + nl +
+                        "Converter made by vargaviktor" + nl +
+                        "Created on " + str(date.today()) ,
+        "url": storebaseurl + storefajl,
+        "file": storefajl,
+        "sheetURL": storebaseurl + t3xfile,
+        "sheet": t3xfile ,
+        "bg_index": 0,
+        "bg_sheet": 0,
+        "revision": revision,
+        "version": 3
+	    } 
+  
+#ide masolni a masik jsont
 
 # Open the file in read mode
 with open('jsondirlist.txt', 'r') as listafile:
-# Read each line in the file
+    # Read each line in the file
     for fileline in listafile:
         fileline = "./" + fileline.replace("\n", "") 
         #print(fileline.strip())
@@ -174,7 +211,7 @@ with open('jsondirlist.txt', 'r') as listafile:
         #if description longer than 270 char, then copy to releasenotes, then cut description
         if len(description)>270:
            releasenotes = description
-           description = description[:270] + "..." + nl + "See release notes." 
+           description = description[:270] + "..." + nl + "See release notes..." 
 
         if "license" in inp:
             license = inp["license"]
@@ -301,7 +338,7 @@ with open('jsondirlist.txt', 'r') as listafile:
                             {
                             "type": "downloadFile",
                             "file": baseurl +slug + "/" + urllib.parse.quote(filename),
-                            "output": "/roms/gb/" + slug + extension
+                            "output": rombase + slug + extension
                             }
                             ]
                       }
@@ -323,7 +360,7 @@ with open('jsondirlist.txt', 'r') as listafile:
                             {
                             "type": "downloadFile",
                             "file": baseurl +slug + "/" + urllib.parse.quote(filename),
-                            "output": "/roms/gb/" + slug + extension
+                            "output": rombase + slug + extension
                             }
                             ]
                       }
@@ -363,8 +400,8 @@ storejson = {
 #print(json.dumps(storejson,indent=2, ensure_ascii=False))
 
 #save the json to unistore file
-with open('gb.unistore', 'w', encoding='utf-8') as storefile:
+with open(storefajl, 'w', encoding='utf-8') as storefile:
     json.dump(storejson, storefile, ensure_ascii=False, indent=4)
-print("(i) Game JSON writen to gb.unistore file.")
+print("(i) Game JSON writen to " + storefajl + " file.")
 
 gbt3s.close()
