@@ -2,14 +2,14 @@
     "storeInfo": {
         "title": "Homebrew Hub GB(C) DB",
         "author": "https://hh.gbdev.io (+ vargaviktor)",
-        "description": "Homebrew Hub is a community-led initiative to collect,\narchive and preserve homebrew and demoscene software\ndeveloped for Game Boy (Color), Game Boy Advance and\nNES. In this database you can browse GB(C) homebrews\npublished on the site: https://hh.gbdev.io \n\nConverter made by vargaviktor\nCreated on 2025-03-14",
+        "description": "Homebrew Hub is a community-led initiative to collect,\narchive and preserve homebrew and demoscene software\ndeveloped for Game Boy (Color), Game Boy Advance and\nNES. In this database you can browse GB(C) homebrews\npublished on the site: https://hh.gbdev.io \n\nConverter made by vargaviktor\nCreated on 2025-03-26",
         "url": "https://raw.githubusercontent.com/vargaviktor/database-unistore/master/gb.unistore",
         "file": "gb.unistore",
         "sheetURL": "https://raw.githubusercontent.com/vargaviktor/database-unistore/master/gb.t3x",
         "sheet": "gb.t3x",
         "bg_index": 0,
         "bg_sheet": 0,
-        "revision": 113,
+        "revision": 119,
         "version": 3
     },
     "storeContent": [

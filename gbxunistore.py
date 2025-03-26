@@ -302,7 +302,9 @@ with open('jsondirlist.txt', 'r') as listafile:
         if screenshots:
            inputpath = "./entries/" + slug + "/" + screenshots[0]
            img = Image.open(inputpath)
-           iconsize = (48,48)
+           #the atlas map needs to be fited on an 1024x1024 plane, so 48x48 is to large (max entries = 441)
+           #with icon size 24x24 we are good for 1764 entries, but there was something wrong with the tool 
+           iconsize = (16,16)
            img.thumbnail(iconsize)
            outputpath = "./iconversion/" + slug + ".png"
            try:
