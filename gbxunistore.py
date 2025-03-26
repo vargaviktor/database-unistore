@@ -346,6 +346,7 @@ with open('jsondirlist.txt', 'r') as listafile:
                             ]
                       }
         else:
+            icon_index -= 1
             gamejson = {
                     "info":{
                     "author":author,
@@ -384,15 +385,14 @@ with open('jsondirlist.txt', 'r') as listafile:
                            }
                        }
 
-        if screenshots:
-            icon_index += 1
+        icon_index += 1
         allgamejson.append(gamejson)
         numofgames += 1
 #these shall be outside the cycle
 
 numofgames -= 1
 print("----------------------")
-print("(i) Conversion of finished, number of converted titles: " + str(numofgames))
+print("(i) Conversion of finished, number of converted games: " + str(numofgames))
         
 #the second is just test.
 storejson = {
