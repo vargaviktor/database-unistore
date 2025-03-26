@@ -49,6 +49,7 @@ else:
 defaultdate = "2001-01-01"
 gbt3sfirstline = "--atlas -f rgba -z auto"
 icon_index = 1
+numofgames = 1
 noicon = "000.png"
 allgamejson = [] 
 
@@ -264,7 +265,7 @@ with open('jsondirlist.txt', 'r') as listafile:
         extension = Path(filename).suffix
 
         print("------- SUMMARY --------")
-        print("(i) Converted file#" + str(icon_index))
+        print("(i) Converted file#" + str(numofgames))
         print("(i) Converted JSON: " + actualjsonpath)
         print("(i) Title       :" + title)
         print("(i) Author      :" + author)
@@ -314,7 +315,7 @@ with open('jsondirlist.txt', 'r') as listafile:
               #if it was not succesful we try the next one screen
               inputpath = "./entries/" + slug + "/" + screenshots[1]
               img = Image.open(inputpath)
-              iconsize = (48,48)
+              iconsize = (24,24)
               img.thumbnail(iconsize)
               outputpath = "./iconversion/" + slug + ".png"
             
@@ -383,13 +384,15 @@ with open('jsondirlist.txt', 'r') as listafile:
                            }
                        }
 
-        icon_index += 1
+        if screenshots:
+            icon_index += 1
         allgamejson.append(gamejson)
+        numofgames += 1
 #these shall be outside the cycle
 
-icon_index -= 1
+numofgames -= 1
 print("----------------------")
-print("(i) Conversion of finished, number of converted titles: " + str(icon_index))
+print("(i) Conversion of finished, number of converted titles: " + str(numofgames))
         
 #the second is just test.
 storejson = {
