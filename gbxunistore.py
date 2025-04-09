@@ -101,8 +101,6 @@ else:
         "revision": revision,
         "version": 3
 	    } 
-  
-#ide masolni a masik jsont
 
 # Open the file in read mode
 with open('jsondirlist.txt', 'r') as listafile:
@@ -280,6 +278,9 @@ with open('jsondirlist.txt', 'r') as listafile:
         print("(i) Version   :" + version)
 
         #extract screenshots
+        #there are: gif (animated), jpg, jpeg and bmp 
+        #also needs to be converted to max 512x512, as Universal Updater supports only that size
+
         screenshots = inp["screenshots"]
         if not screenshots:
            print("(i) No screenshot, nothing to convert to icon.")
@@ -291,11 +292,34 @@ with open('jsondirlist.txt', 'r') as listafile:
             for x in range(numshots):
                sstitle [x]=(Path(screenshots[x]).stem).upper().replace("-", " ").replace("_", " ")
                print ("(i) Screenshot: " + sstitle[x] + " -- " + screenshots[x])
-               ssjson = {
-                   "description":sstitle[x],
-                   "url":(baseurl + slug + "/" + screenshots[x])
-                   }
-               ssall.append(ssjson)
+              
+               #converting all te screeshots to 512x512 thumbnails and png
+               inputpath = "./entries/" + slug + "/" + screenshots[x]
+               try:
+                  img = Image.open(inputpath)
+               except:
+                  print("(w) Cannot open screenshot file, skipping.")
+               else:
+                  iconsize = (512,512)
+                  img.thumbnail(iconsize)
+                  #thumbnail converts if it is larger, but skips if it fits
+                  outputfilename = (Path(screenshots[x]).stem).lower().replace(" ", "_")
+                  outputpath = "./converted/" + slug + "-" + outputfilename + ".png"
+                  try:
+                     img.save(outputpath)
+                  except:
+                     #if it was not succesful we try the next one screen
+                     print("(w) Can not write converted screenshot: " + screenshots[x] + ".png")
+                  else:
+                     ssjson = {
+                      "description":sstitle[x],
+                      "url":(storebaseurl + "converted/" + slug + "-" + outputfilename + ".png")
+                      }
+                     ssall.append(ssjson)
+
+
+
+
 
         #creating a 48x48 (or smaller) thumbnail in png format from the first image
         #also adding to the gb.t3s to create the t3x later based on that
