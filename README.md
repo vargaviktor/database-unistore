@@ -24,13 +24,13 @@ This is too long to enter:
 
 https://raw.githubusercontent.com/vargaviktor/database-unistore/master/gb.unistore
 
-![gb_long_link](https://github.com/user-attachments/assets/11f5572f-4e0a-4297-bf67-c3545473c6c4)
+![gb_long_link](https://github.com/vargaviktor/games-unistore/blob/master/gb_long_link.png)
 
 Add this instead:
 
 https://shorturl.at/KbfWT
 
-![gb_short_link](https://github.com/user-attachments/assets/a02baf38-7271-4189-8403-fb6227163a65)
+![gb_short_link](https://github.com/vargaviktor/games-unistore/blob/master/gb_short_link.png)
 
 (If this is unavailable, create a short link from the link above and try to add that.)
 
