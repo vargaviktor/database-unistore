@@ -661,6 +661,7 @@ entries/marla-and-the-elemental-rings-demo/
 entries/mashinn__little-dungeon-renovator/
 entries/master-your-multiplication/
 entries/mastermind/
+entries/mateusdigital_el-jamon-volador/
 entries/math-drill-20/
 entries/max/
 entries/maxpirate/
@@ -755,6 +756,7 @@ entries/nobody-the-story-of-nothing-demo-version-02/
 entries/nomoreapples__bebok/
 entries/nosuchthing/
 entries/novascape/
+entries/novasquirrel_conways-life-for-game-boy/
 entries/nuku7/
 entries/numeris-oct/
 entries/nyancat/
@@ -803,6 +805,7 @@ entries/pilot-gbs/
 entries/pineapplekid/
 entries/ping-pong-diplomacy-version-10/
 entries/pixel-ghost__lifes-too-short-gb-a-christmas-spirit-demo/
+entries/pixel-perfection_ninjas-way/
 entries/pixelloren__third-grade-noir/
 entries/planet-life-demo/
 entries/planetx/
@@ -982,6 +985,7 @@ entries/snake/
 entries/snakeat/
 entries/sneaky-snakes/
 entries/snek-gbc/
+entries/snorpung_dangan-gb2/
 entries/sokoban/
 entries/solveknight-gb-v1-1/
 entries/some-old-stuff/
@@ -1061,6 +1065,7 @@ entries/talking-gb/
 entries/tam-bitmap-demo/
 entries/tank-rush/
 entries/tanks/
+entries/tardigrade-nx_logic-island/
 entries/tchaly__project-futur/
 entries/tech-and-blood/
 entries/telling-lys/
@@ -1207,6 +1212,7 @@ entries/wobble-sttng/
 entries/wobbly-celebration/
 entries/wonder-topia/
 entries/work-in-progress/
+entries/work-master-os/
 entries/wrecking-balloon/
 entries/wrong-way-games__sacred-meat/
 entries/wwf-betrayal-5-are-you-real/
@@ -1226,6 +1232,9 @@ entries/yume-no-oto-1/
 entries/zakari-games__frontiers-of-the-fallen/
 entries/zanax-gb/
 entries/zanipixels__lightseeker/
+entries/zeichigames_saint-seiya-el-regreso-del-fnix-gbc/
+entries/zenzoa_piropa/
 entries/zilogized/
+entries/zone-booth_pizza-palace/
 entries/zoomar/
 entries/zypher/

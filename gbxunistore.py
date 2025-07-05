@@ -16,6 +16,9 @@ import matplotlib.pyplot as plt
 # import date class from datetime module for today
 from datetime import date
 
+import shutil
+
+
 #load the revison, to increment it
 file = open("revision.txt", "r")
 revision = int(file.read())
@@ -49,15 +52,41 @@ else:
 defaultdate = "2001-01-01"
 gbt3sfirstline = "--atlas -f rgba -z auto"
 icon_index = 1
+sheet_index = 0
 numofgames = 1
 noicon = "000.png"
 allgamejson = [] 
+
+
+#prewrite t3s files
+gbt3s = open("./iconversion/gb1.t3s" , "w")
+gbt3s.write(gbt3sfirstline + nl)
+gbt3s.write(noicon+nl)
+gbt3s.close()
+gbt3s = open("./iconversion/gb2.t3s" , "w")
+gbt3s.write(gbt3sfirstline + nl)
+gbt3s.write(noicon+nl)
+gbt3s.close()
+gbt3s = open("./iconversion/gb3.t3s" , "w")
+gbt3s.write(gbt3sfirstline + nl)
+gbt3s.write(noicon+nl)
+gbt3s.close()
+gbt3s = open("./iconversion/gb4.t3s" , "w")
+gbt3s.write(gbt3sfirstline + nl)
+gbt3s.write(noicon+nl)
+gbt3s.close()
+gbt3s = open("./iconversion/gb5.t3s" , "w")
+gbt3s.write(gbt3sfirstline + nl)
+gbt3s.write(noicon+nl)
+gbt3s.close()
 
 #store the first line of gbx.t3s
 #and the second line with for icon zero as "no icon" icon
 gbt3s = open("./iconversion/" + t3sfile , "w")
 gbt3s.write(gbt3sfirstline + nl)
 gbt3s.write(noicon+nl)
+
+
 
 if build == "gb":
    storeinfo = {
@@ -101,6 +130,34 @@ else:
         "revision": revision,
         "version": 3
 	    } 
+        
+        
+with open('jsondirlist.txt', 'r') as fp:
+    lines = len(fp.readlines())
+    print('(i) Total Number of lines:', lines)
+
+if lines>400 :
+    print('Using 5 t3s file - enough for 2000 title')
+    storeinfo = {
+        "title": "Homebrew Hub GB(C) DB" ,
+        "author": "https://hh.gbdev.io (+ vargaviktor)",
+	#                #######################################################
+        "description": 	"Homebrew Hub is a community-led initiative to collect," + nl +
+			"archive and preserve homebrew and demoscene software" + nl +
+			"developed for Game Boy (Color), Game Boy Advance and" + nl + 
+			"NES. In this database you can browse GB(C) homebrews" + nl +
+			"published on the site: https://hh.gbdev.io " + nl + nl +
+			"Converter made by vargaviktor" + nl +
+			"Created on " + str(date.today()) ,
+        "url": storebaseurl + storefajl,
+        "file": storefajl,
+        "sheetURL": [ storebaseurl + 'gb1.t3x' , storebaseurl + 'gb2.t3x' , storebaseurl + 'gb3.t3x' , storebaseurl + 'gb4.t3x' , storebaseurl + 'gb5.t3x' ],
+        "sheet": [ 'gb1.t3x' , 'gb2.t3x' , 'gb3.t3x' , 'gb4.t3x' , 'gb5.t3x' ],
+        "bg_index": 0,
+        "bg_sheet": 0,
+        "revision": revision,
+        "version": 3
+	    }
 
 # Open the file in read mode
 with open('jsondirlist.txt', 'r') as listafile:
@@ -114,8 +171,10 @@ with open('jsondirlist.txt', 'r') as listafile:
 
         #import the game.json
         actualjsonpath = fileline + "game.json"
+        
+        print ("(i) Opening new JSON file: " + actualjsonpath)
 
-        with open(actualjsonpath) as fajl:
+        with open(actualjsonpath, encoding="utf-8") as fajl:
             inp = json.load(fajl)
 
         #reading game.json values to variables
@@ -273,6 +332,7 @@ with open('jsondirlist.txt', 'r') as listafile:
         print(description)
 
         print("(i) Iconindex :" + str(icon_index))
+        print("(i) Sheetindex :" + str(sheet_index))
         print("(i) Last upd. :" + last_updated)
         print("(i) License   :" + license)
         print("(i) Version   :" + version)
@@ -329,7 +389,7 @@ with open('jsondirlist.txt', 'r') as listafile:
            img = Image.open(inputpath)
            #the atlas map needs to be fited on an 1024x1024 plane, so 48x48 is to large (max entries = 441)
            #with icon size 24x24 we are good for 1764 entries, but there was something wrong with the tool 
-           iconsize = (24,24)
+           iconsize = (48,48)
            img.thumbnail(iconsize)
            outputpath = "./iconversion/" + slug + ".png"
            try:
@@ -339,7 +399,7 @@ with open('jsondirlist.txt', 'r') as listafile:
               #if it was not succesful we try the next one screen
               inputpath = "./entries/" + slug + "/" + screenshots[1]
               img = Image.open(inputpath)
-              iconsize = (24,24)
+              iconsize = (48,48)
               img.thumbnail(iconsize)
               outputpath = "./iconversion/" + slug + ".png"
             
@@ -354,6 +414,7 @@ with open('jsondirlist.txt', 'r') as listafile:
                     "console":[console],
                     "description":description,
                     "icon_index":icon_index,
+                    "sheet_index":sheet_index,
                     "last updated":last_updated,
                     "license":license,
                     "title":title,
@@ -378,6 +439,7 @@ with open('jsondirlist.txt', 'r') as listafile:
                     "console":[console],
                     "description":description,
                     "icon_index": 0,
+                    "sheet_index": 0,
                     "last updated":last_updated,
                     "license":license,
                     "title":title,
@@ -400,6 +462,7 @@ with open('jsondirlist.txt', 'r') as listafile:
                     "console":[console],
                     "description":description,
                     "icon_index":icon_index,
+                    "sheet_index":sheet_index,
                     "last updated":last_updated,
                     "license":license,
                     "title":title,
@@ -412,6 +475,15 @@ with open('jsondirlist.txt', 'r') as listafile:
         icon_index += 1
         allgamejson.append(gamejson)
         numofgames += 1
+        if icon_index == 400:
+            
+            gbt3s.close()
+            shutil.copyfile("./iconversion/" + t3sfile, "./iconversion/gb" + str(sheet_index + 1) + ".t3s" )
+            sheet_index += 1
+            icon_index = 1
+            gbt3s = open("./iconversion/" + t3sfile , "w")
+            gbt3s.write(gbt3sfirstline + nl)
+            gbt3s.write(noicon+nl)
 #these shall be outside the cycle
 
 numofgames -= 1
@@ -434,3 +506,4 @@ with open(storefajl, 'w', encoding='utf-8') as storefile:
 print("(i) Game JSON writen to " + storefajl + " file.")
 
 gbt3s.close()
+shutil.copyfile("./iconversion/" + t3sfile, "./iconversion/gb" + str(sheet_index + 1) + ".t3s" )
