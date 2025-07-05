@@ -120,12 +120,19 @@
                             "Racing",
                             "Sports",
                             "Fighting",
-                            "Interactive Fiction"
+                            "Interactive Fiction",
+                            "2D",
+                            "Arena",
+                            "Butano"
                         ]
                     },
                     {
                         "type": "string",
                         "pattern": "^event:[a-z0-9._-]+$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^['A-Za-z0-9\\s-]+$"
                     },
                     {
                         "type": "string",

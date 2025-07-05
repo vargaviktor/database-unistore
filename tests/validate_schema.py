@@ -9,7 +9,7 @@ import sys
 
 from jsonschema import validate, ValidationError
 
-with open("../schemas/game-schema-d4.json") as f:
+with open("../schemas/game-schema-d5.json") as f:
     schema = json.load(f)
 
 path = "../entries/"
@@ -19,7 +19,6 @@ errors = 0
 
 for game in progressbar.progressbar(games_list, redirect_stdout=True):
     n += 1
-    print(f"Validating {game}..")
     with open(f"../entries/{game}/game.json") as f:
         game_metadata = json.load(f)
     try:
