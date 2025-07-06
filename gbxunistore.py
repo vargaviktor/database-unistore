@@ -152,7 +152,7 @@ if lines>400 :
         "url": storebaseurl + storefajl,
         "file": storefajl,
         "sheetURL": [ storebaseurl + 'gb1.t3x' , storebaseurl + 'gb2.t3x' , storebaseurl + 'gb3.t3x' , storebaseurl + 'gb4.t3x' , storebaseurl + 'gb5.t3x' ],
-        "sheet": [ 'gb1.t3x' , 'gb2.t3x' , 'gb3.t3x' , 'gb4.t3x' , 'gb5.t3x' ],
+        "sheet": [ "gb1.t3x" , "gb2.t3x" , "gb3.t3x" , "gb4.t3x" , "gb5.t3x" ],
         "bg_index": 0,
         "bg_sheet": 0,
         "revision": revision,
