@@ -34,6 +34,13 @@ https://shorturl.at/KbfWT
 
 (If this is unavailable, create a short link from the link above and try to add that.)
 
+## Download GB/GBC database with QR code
+1. Start Universal Updater on the 3DS
+2. In the Universal Updater go to the Settings (Cogwheel) > Unistore selection.
+3. Choose the (last) QR icon, then scan the following QR code.
+
+![QR kód](gb_qrcode.png)
+
 ## License
 
 The *Homebrew Hub* project is licensed under the GPLv3 license. 
