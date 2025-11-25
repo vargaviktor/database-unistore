@@ -19,21 +19,6 @@ Steps:
    This converts the PNG icons and the index list to a sprite sheet good for 3DS.
 5. Copy the result gb.t3x file back to the repository root   
 
-## Address to add in Universal Updater
-This is too long to enter:
-
-https://raw.githubusercontent.com/vargaviktor/database-unistore/master/gb.unistore
-
-![gb_long_link](https://github.com/vargaviktor/games-unistore/blob/master/gb_long_link.png)
-
-Add this instead:
-
-https://shorturl.at/KbfWT
-
-![gb_short_link](https://github.com/vargaviktor/games-unistore/blob/master/gb_short_link.png)
-
-(If this is unavailable, create a short link from the link above and try to add that.)
-
 ## Download GB/GBC database with QR code
 1. Start Universal Updater on the 3DS
 2. In the Universal Updater go to the Settings (Cogwheel) > Unistore selection.
