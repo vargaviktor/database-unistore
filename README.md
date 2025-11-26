@@ -22,7 +22,8 @@ Steps:
 ## Download GB/GBC database with QR code
 1. Start Universal Updater on the 3DS
 2. In the Universal Updater go to the Settings (Cogwheel) > Unistore selection.
-3. Choose the (last) QR icon, then scan the following QR code.
+3. Choose the New icon (+ in a circle) (last one)
+4. Select either the QR icon (first) and scan the following QR code, or the keyboard icon (second) and enter the address: vargaviktor.hu/gb.unistore
 
 ![QR kód](gb_qrcode.png)
 
