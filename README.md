@@ -25,7 +25,7 @@ Steps:
 3. Choose the New icon (+ in a circle) (last one)
 4. Select either the QR icon (first) and scan the following QR code, or the keyboard icon (second) and enter the address: vargaviktor.hu/gb.unistore
 
-![QR kód](gb_qrcode.png)
+![QR kód](gb_qrcoden.png)
 
 ## License
 
