@@ -1,5 +1,6 @@
 --atlas -f rgba -z auto
 000.png
+gb-flip.png
 gb-flyer.png
 gb-fm-synth-20090410.png
 gb-fm-synth.png
@@ -398,4 +399,3 @@ pickpocket.png
 pie-crust-v1-0.png
 pikakilla.png
 pilot-gbs.png
-pineapplekid.png

@@ -199,6 +199,21 @@ with open('jsondirlist.txt', 'r') as listafile:
                 
                 author = authorstr
                 print ("(i) Multiple author: " + author)
+            elif isinstance(author, dict):
+                print(type(author))
+                try:
+                   authorstr = str(', '.join(author))
+                   # if it is succesfull, it was a multistrign
+                except TypeError:
+                   # if typeerror this a developer structure 
+                   # we need to extract the name item from this dict
+                   print("Typerror, this is an object")
+                except:
+                   print("If we are here I dont know WFT happened. :)")
+                
+                author = authorstr
+                print ("(i) Multiple author: " + author)
+
             else:
                 print("(i) Single author: " + author)
                 #the string is there, nothing to do

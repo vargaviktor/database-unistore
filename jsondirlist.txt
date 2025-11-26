@@ -368,6 +368,7 @@ entries/fruit-fly-version-100/
 entries/fruit-pursuit/
 entries/fruit-spin-v1-0/
 entries/fruits-field/
+entries/funny-numbers/
 entries/future/
 entries/fuzzys-world/
 entries/fx-shooter-g-minirpg2-story/
