@@ -20,7 +20,8 @@ Steps:
    (Check the Python script's first line to have "gb" value set.) 
 4. Copy the 'iconversion' directory to a Windows machine and run the '3_convert.cmd' script.
    This converts the PNG icons and the index list to a sprite sheet good for 3DS.
-5. Copy the result gb.t3x file back to the repository root   
+5. Copy the result gb.t3x file back to the repository root.
+6. Commit and push   
 
 ## Download GB/GBC database with QR code
 1. Start Universal Updater on the 3DS
