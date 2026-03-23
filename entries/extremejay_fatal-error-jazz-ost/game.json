@@ -1,0 +1,27 @@
+{
+    "$schema": "https://raw.githubusercontent.com/gbdev/database/refs/heads/master/schemas/game-schema-d5.json",
+    "slug": "extremejay_fatal-error-jazz-ost",
+    "title": "FATAL eRRoR Jazz OST",
+    "screenshots": [
+        "cover.jpg",
+        "screenshots/YB2C6F.jpg",
+        "screenshots/bONM4P.png"
+    ],
+    "typetag": "music",
+    "platform": "GBC",
+    "tags": [
+        "Retro",
+        "chiptune",
+        "Homebrew",
+        "event:gbcompo25"
+    ],
+    "files": [
+        {
+            "default": true,
+            "filename": "files/FATAL eRRoR Jazz OST_jam.gbc",
+            "playable": true
+        }
+    ],
+    "developer": "ExtremeJAy",
+    "website": "https://extremejay.itch.io/fatal-error-jazz-ost"
+}
