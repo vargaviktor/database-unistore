@@ -1,17 +1,58 @@
-# Homebrew Hub - GB/GBC games database
+# Homebrew Hub GB/GBC games database FORK
 
-JSON and asset database for **Game Boy and Game Boy Color** homebrew entries on [Homebrew Hub](https://hh.gbdev.io). This is one of several platform-specific database repositories that feed Homebrew Hub - see the [full list of databases](https://github.com/gbdev/homebrewhub/blob/main/DATABASES.md).
+The purpose of this fork to convert the [Homebrew Hub](https://hh.gbdev.io) database to the format of ".unistore".
+In this format the Universal Updater can download the entries. 
 
-Propose additions, improvements, and fixes to the entries metadata values (and the releases) here.
+![](https://img.shields.io/badge/dynamic/json.svg?label=database&colorB=green&suffix=%20total%20entries&query=results&uri=https://hh3.gbdev.io/api/all) [![Schema compliance](https://github.com/gbdev/database/actions/workflows/test.yml/badge.svg)](https://github.com/gbdev/database/actions/workflows/test.yml)
 
-[![Schema compliance](https://github.com/gbdev/database/actions/workflows/test.yml/badge.svg)](https://github.com/gbdev/database/actions/workflows/test.yml)
 
-## Contribute
+# How to use?
 
-We want to include every homebrew, game or demo ever produced for Game Boy or Game Boy Color.
-If you know an interesting entry, please [contribute](CONTRIBUTING.md), everyone can add new games or improve the existing entries, it's really easy!
+Steps:
 
-There are also a lot of websites and blogs with a lot of ROMs, we are writing script to automatically scrape those resources. [Take a look](scrapers/README.md).
+1. Update the repository on github (to add new items from the main, if there was an update), and pull it localy.
+   
+   1.1 "Sync fork" button > "Update branch" button
+   
+   1.2 On your PC: git pull
+
+   If this is not possible:
+
+           x.1 On your PC: git pull (this creates on your computer a copy of the latest version)
+           x.2 On your PC Copy the following files to a backup directory:  
+              .gitignore 
+              1_createlist.sh
+              README.md
+              gba_long_link.png
+              gba_qrcode.png
+              gba_qrcoden.png
+              gba_short_link.png
+              gbxunistore.py
+              requirements.txt
+              revision.txt
+              iconversion/3_convert.cmd
+              iconversion/tex3ds.exe
+           x.3 On Github click on the Sync fork button, then Discard x commits. (this drops the changes online)
+           x.3 On your PC again: git pull (with this you overwrite everything on your computer)
+           x.4 After this copy back the backuped files, overwrite everything.
+   
+3. Run on Linux the 1_createlist.sh
+   This creates the list of the directories of game.json files.
+4. Run the gbxunistore.py with the command: 'python3 gbxunistore.py'
+   This creates the .unistore JSON file, and also convert the first image to a PNG icon of every game.
+   (Check the Python script's first line to have "gb" value set.) 
+5. Copy the 'iconversion' directory to a Windows machine and run the '3_convert.cmd' script.
+   This converts the PNG icons and the index list to a sprite sheet good for 3DS.
+6. Copy the result gb.t3x file back to the repository root.
+7. Commit and push   
+
+## Download GB/GBC database with QR code
+1. Start Universal Updater on the 3DS
+2. In the Universal Updater go to the Settings (Cogwheel) > Unistore selection.
+3. Choose the New icon (+ in a circle) (last one)
+4. Select either the QR icon (first) and scan the following QR code, or the keyboard icon (second) and enter the address: vargaviktor.hu/gb.unistore
+
+![QR kód](gb_qrcoden.png)
 
 ## License
 
